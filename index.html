@@ -2,11 +2,15 @@
 <html>
   <head>
     <title>Image Viewer</title>
-    <script data-main="javascripts/main" src="lib/requirejs/require.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <button>Load Image</button>
+    <h1>Image Viewer</h1>
+    <button id="btn-load">Load Image</button>
     We are using node.js <script>document.write(process.version)</script>.
+
+    <input style="display:none;" id="fileDialog" type="file" />
+
   </body>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="javascripts/main.js"></script>
 </html>
