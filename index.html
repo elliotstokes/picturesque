@@ -2,13 +2,22 @@
 <html>
   <head>
     <title>Image Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style/main.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1>Image Viewer</h1>
-    <button id="btn-load">Load Image</button>
-    We are using node.js <script>document.write(process.version)</script>.
+    <div class="controls-container">
 
-    <input style="display:none;" id="fileDialog" type="file" />
+      <button id="btn-load">Load Image</button>
+      We are using node.js <script>document.write(process.version)</script>.
+
+      <input style="display:none;" id="fileDialog" type="file" />
+    </div>
+
+
+    <canvas class="image-container">
+    </canvas>
+
 
   </body>
   <script src="bower_components/jquery/dist/jquery.js"></script>
