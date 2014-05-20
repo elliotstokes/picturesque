@@ -44,7 +44,10 @@
 			if (file) {
 				var image = new Image();
 				image.onload = function() {
-					alert("loaded");
+					alert("loaded" + this.width + "," + this.height);
+					//make canvas the same size as the image
+					canvasElement.height = this.height;
+					canvasElement.width = this.width;
 					context.drawImage(image, 0, 0);
 				}
 				image.src = file;
